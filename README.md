@@ -13,4 +13,4 @@
 * Data dictionary:
 |Name  |Modeling Role|Measurement Level|Descripition
 |-------|:-------------:|:--------------:|:--------------:|
-|ID|ID|int|unique row indentifier
+|ID|ID|int|unique row  indentifier
