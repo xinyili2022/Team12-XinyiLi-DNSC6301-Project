@@ -62,11 +62,25 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
 ### Quantitative Analysis
 
 
+#### Metrics used to evaluate your final model (AUC and AIR)
+
+#### State the final values, neatly -- as bullets or a table, of the metrics for all data: training, validation, and test data
 
 
-#### Correlation Heatmap
+#### Provide any plots related to your data or final model
 ![Correlation Heatmap](download.png)
+
+
                        
                        
-                       
+### Ethical considerations      
+
+#### Describe potential negative impacts of using your model:
+
+#### Describe potential uncertainties relating to the impacts of using your model:
+
+#### Describe any unexpected or results
+
+
+
                        
