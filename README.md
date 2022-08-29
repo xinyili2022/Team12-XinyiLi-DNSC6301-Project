@@ -84,48 +84,24 @@ This table shows the predicted and actual values for different races. For exampl
 ![datacolumn](1.datacolumn.png)
 * **data column**: The image shows the data for each factor, divided into continuous and discrete variables. Discrete variables, such as the number of payments are bars of their respective discrete distributions, and the length of the bars is determined by the frequency of payments; continuous variables, such as the number of loans repaid, are shown as ID data, but the size of the ID data has no practical significance.
 ![correlation](2.correlation.png)
-* **correlation**: 'LIMIT_BAL',
-       'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1',
-       'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6',
-       'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6'                       
+* **correlation**: This figure graphically shows the correlation between different factors, and the correlation is divided into positive and negative correlation. The lighter the color, the closer the correlation is to a completely positive correlation; the darker the color, the closer the correlation is to a completely negative correlation.                       
 ![iterationplot](3.iterationplot.png)
-* **iterationplot**: 'LIMIT_BAL',
-       'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1',
-       'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6',
-       'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6'
+* **iterationplot**: This figure shows the data of training AUC and validation AUC under 12 iterations。
 ![decisiontree](4.decisiontree.png)
-* **decisiontree**: 'LIMIT_BAL',
-       'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1',
-       'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6',
-       'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6'
+* **decisiontree**: The picture is the decision tree of this model.
 ![variableimportance](5.variableimportance.png)
-* **variableimportance**: 'LIMIT_BAL',
-       'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1',
-       'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6',
-       'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6'
+* **variableimportance**: This figure shows the importance of different factors, and the longer the length of the bar, the more important the factor is. The 0th payment is the most important of all variables.
 ![iterationplot2](6.iterationplot2.png)
-* **iterationplot2**: 'LIMIT_BAL',
-       'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1',
-       'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6',
-       'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6'
+* **iterationplot2**: This figure shows the data of training AUC and validation AUC under 12 iterations.
 
 ### Ethical considerations      
 
-#### Describe potential negative impacts of using your model:
-* **Columns used as inputs in the final model**: 'LIMIT_BAL',
-       'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1',
-       'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6',
-       'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6'
+#### Describe potential negative impacts of using your model
+* The model may be set up with moral hazard, e.g., the conclusion of this model contains that the repayment record of the 0th payment is the most important. It may lead to the failure of the model by repayers who place great importance on the earliest repayment in line in order to improve their creditworthiness, while they do not have the actual ability to repay the loan themselves.
 #### Describe potential uncertainties relating to the impacts of using your model:
-* **Columns used as inputs in the final model**: 'LIMIT_BAL',
-       'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1',
-       'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6',
-       'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6'
+* The predicted and actual differences by gender and by race are analyzed in this model. This reflects that the model may have bias in predictions due to differences in different populations such as gender, race.
 #### Describe any unexpected or results
-* **Columns used as inputs in the final model**: 'LIMIT_BAL',
-       'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1',
-       'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6',
-       'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6'
+* There is no way to predict the data completely, but it can be constantly approached by collecting a large amount of past data and correcting it at any time. If this is to happen, a large amount of data will be collected with government intervention. In the event of a data breach, this could have a significant impact on human data security. Illegal companies may also generate profits from these large amounts of data, jeopardizing the normal functioning of the market.
 
 
                        
