@@ -66,10 +66,20 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
 * **Columns used as inputs in the final model**: Training data: 15000 rows and 20 columns, Validation data: 7500 rows and 20 columns, Testing data: 7500 rows and 20 columns
 * 
 #### State the final values, neatly -- as bullets or a table, of the metrics for all data: training, validation, and test data
+![corr](7.corr.png)
 * **Columns used as inputs in the final model**: 'LIMIT_BAL',
        'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1',
        'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6',
        'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6'
+![gap](8.gap.png)
+
+![race](9.race.png)
+
+![sex](10.sex.png)
+
+![accuracy](11.accuracy.png)
+
+![acceptair](12.acceptair.png)
 
 #### Provide any plots related to your data or final model
 ![datacolumn](1.datacolumn.png)
