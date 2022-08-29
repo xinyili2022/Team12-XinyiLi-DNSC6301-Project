@@ -63,49 +63,48 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
 
 
 #### Metrics used to evaluate your final model (AUC and AIR)
-* **Columns used as inputs in the final model**: Training data: 15000 rows and 20 columns, Validation data: 7500 rows and 20 columns, Testing data: 7500 rows and 20 columns
-* 
+* Test AUC-0.7438
+
+
 #### State the final values, neatly -- as bullets or a table, of the metrics for all data: training, validation, and test data
 ![corr](7.corr.png)
-* **Columns used as inputs in the final model**: 'LIMIT_BAL',
-       'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1',
-       'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6',
-       'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6'
+* **correlation**: This table shows the correlation between different factors, where the diagonal correlation is one, because the factor is perfectly correlated with itself.
 ![gap](8.gap.png)
-
+* **gap**: 
+This table shows the predicted and actual values for different races. For example, in the case of predictions for whites, both actual and predicted 1 occurred 176 times, both actual and predicted 0 occurred 1228 times, actual 0 predicted 1 813 times, and actual 1 predicted 0 72 times. The predicted acceptance of the combined white population was 0.568, while this table also makes a comparison of the acceptance between different racial groups.
 ![race](9.race.png)
-
+* **race**: This table shows the predicted and actual values for different races. For example, in the case of predictions for whites, both actual and predicted 1 occurred 176 times, both actual and predicted 0 occurred 1228 times, actual 0 predicted 1 813 times, and actual 1 predicted 0 72 times. The predicted acceptance of the combined white population was 0.568, while this table also makes a comparison of the acceptance between different racial groups.
 ![sex](10.sex.png)
-
+* **sex**:This table shows the predicted and actual values for different genders. 
 ![accuracy](11.accuracy.png)
-
+* **accuracy**: As the cutoff value increases, the accuracy goes up.
 ![acceptair](12.acceptair.png)
-
+* **acceptair**: This table shows the AIR data for different races。
 #### Provide any plots related to your data or final model
 ![datacolumn](1.datacolumn.png)
 * **data column**: The image shows the data for each factor, divided into continuous and discrete variables. Discrete variables, such as the number of payments are bars of their respective discrete distributions, and the length of the bars is determined by the frequency of payments; continuous variables, such as the number of loans repaid, are shown as ID data, but the size of the ID data has no practical significance.
 ![correlation](2.correlation.png)
-* **Columns used as inputs in the final model**: 'LIMIT_BAL',
+* **correlation**: 'LIMIT_BAL',
        'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1',
        'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6',
        'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6'                       
 ![iterationplot](3.iterationplot.png)
-* **Columns used as inputs in the final model**: 'LIMIT_BAL',
+* **iterationplot**: 'LIMIT_BAL',
        'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1',
        'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6',
        'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6'
 ![decisiontree](4.decisiontree.png)
-* **Columns used as inputs in the final model**: 'LIMIT_BAL',
+* **decisiontree**: 'LIMIT_BAL',
        'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1',
        'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6',
        'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6'
 ![variableimportance](5.variableimportance.png)
-* **Columns used as inputs in the final model**: 'LIMIT_BAL',
+* **variableimportance**: 'LIMIT_BAL',
        'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1',
        'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6',
        'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6'
 ![iterationplot2](6.iterationplot2.png)
-* **Columns used as inputs in the final model**: 'LIMIT_BAL',
+* **iterationplot2**: 'LIMIT_BAL',
        'PAY_0', 'PAY_2', 'PAY_3', 'PAY_4', 'PAY_5', 'PAY_6', 'BILL_AMT1',
        'BILL_AMT2', 'BILL_AMT3', 'BILL_AMT4', 'BILL_AMT5', 'BILL_AMT6',
        'PAY_AMT1', 'PAY_AMT2', 'PAY_AMT3', 'PAY_AMT4', 'PAY_AMT5', 'PAY_AMT6'
