@@ -68,17 +68,17 @@ DecisionTreeClassifier(ccp_alpha=0.0, class_weight=None, criterion='gini',
 
 
 #### Provide any plots related to your data or final model
-![data column](1.data column.png)
+![datacolumn](1.data column.png)
 
 ![correlation](2.correlation.png)
                        
-![iteration plot](3.iteration plot.png)
+![iterationplot](3.iteration plot.png)
 
-![decision tree](4.decision tree.png)
+![decisiontree](4.decision tree.png)
 
-![variable importance](5.variable importance.png)
+![variableimportance](5.variable importance.png)
 
-![iteration plot2](6.iteration plot2.png)
+![iterationplot2](6.iteration plot2.png)
 
 
 ### Ethical considerations      
